@@ -53349,7 +53349,8 @@ function restoreCache(paths, primaryKey, restoreKeys) {
         }
         const { key, cacheFile } = result;
         // Restore files from archive
-        const cachePath = (0, path_1.join)(cacheDir, cacheFile.path);
+        //const cachePath = (0, path_1.join)(cacheDir, cacheFile.path);
+        const cachePath = "C:\actions-runner\_cache\DruwAudio\MikeDeanFx\Windows-build-76319cbfbd54e563b85e44d565257283df4e5647043801888cd0439b064681ee.tar.lz4";
         const baseDir = (0, path_1.dirname)(path);
         const cmd = `lz4 -d -v -c ${cachePath} 2>/dev/null | tar xf - -C ${baseDir}`;
         core.info([
